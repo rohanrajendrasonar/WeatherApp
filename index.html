@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your location" class="input-box">
+
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                </div>
+            </div>
+
+    <!-- ERROR -->
+            <div class="Error">
+                <div class="errMsg">Weather not found</div>
+
+                <img class="errImg" src="/Assets/404.png" alt="Error Image">
+            </div>
+
+    <!-- Weather Body -->
+            <div class="weather-body">
+                <img src="/Assets/clear.png" alt="weather image" class="weather-img">
+                
+                <div class="weather-box">
+                    <p class="temperature">24<sup><sup>o</sup>C</sup></p>
+                    <p class="description">Clear Sky</p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-duotone fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <span id="humidity">30%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                
+                    <div class="windspeed">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span id="windspeed">40 KM/H</span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/dce52d6131.js" crossorigin="anonymous"></script>
+
+        <script src="app.js">
+        </script>
+    </body>
+</html>

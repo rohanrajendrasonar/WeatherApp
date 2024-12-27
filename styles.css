@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    background-color: white;
+    width: 400px;
+    height: min-content;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Error{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.errMsg{
+    width: 100%;
+    height: min-content;
+    font-size: 30px;
+    font-weight: 90%;
+}
+
+.errImg{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 80%;
+    font-size: 20px;
+    color: black;
+    background-color: aquamarine;
+    text-transform: capitalize;
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+
+.search-box input::placeholder{
+    color: #000;
+}
+
+.search-box button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color: aqua;
+}
+
+.weather-img{
+    width: 50%;
+}
+
+.weather-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.weather-box .temperature>sup{
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.humidity, .windspeed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-details i{
+    font-size: 30px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
